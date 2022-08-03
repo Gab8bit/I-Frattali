@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curva di Koch</title>
+        <link type="text/css" rel="stylesheet" href="css_mate.css">
+    </head>
+    <body>
+        <video autoplay muted loop id="myVideo">
+            <source src="fractal.mp4" type="video/mp4">
+            Il tuo browser non supporta il video :(
+        </video>
+        <div class="pagina_curva">
+        <div class="testata">
+            <br>
+            <h1 class="titolo">Curva di Koch</h1>
+            <br><br>
+            <div class="linktestata">
+                <button type="button" class="pulsanti" onclick="window.location.href='index.html'">Home</button>
+                <button type="button" class="pulsanti" onclick="window.location.href='mandelbrot.html'">Mandelbrot</button>
+                <button type="button" class="pulsanti" onclick="window.location.href='sierpinski.html'">Triangolo di Sierpinski</button>
+                <button type="button" class="pulsanti" onclick="window.location.href='natura.html'">Frattali in Natura</button>
+                <button type="button" class="pulsanti" onclick="window.location.href='digitali.html'">Frattali Digitali</button>
+            </div>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="immagine_iniziale">
+            <table align="right" border="0">
+                <tr>
+                    <th class="colore_tabelle" align="center">La Curva di Koch</th>
+                </tr>
+                <tr>
+                    <td><img class="bordo_immagini" src="immagini/curva.gif" width="433px" height="300px"></td>
+                </tr>
+
+            </table>
+        </div>
+        <br>
+        <br>
+        <div class="corpo">
+            <div class="spazio_testo">
+                <h1 id="cosa_sono">Come costruire la Curva di Koch</h1>
+                <br>
+                <p>La curva di Koch apparve per la prima volta su un documento scritto dal matematico Helge Von Koch.<br><br>Questa curva frattale ha inizio da un semplice segmento alla quale vengono ripetuti 3 passaggi:<br>1) dividere il segmento in tre segmenti uguali;<br>2) cancellare il segmento centrale, sostituendolo con due segmenti identici che costituiscono i due lati di un triangolo equilatero;<br>3) tornare al punto 1 per ognuno degli attuali segmenti.<br><br>Partendo da un segmento, quindi, se ne ottengono quattro, nella seconda ripetizione se ne ottengono 16 (4 x 4) e cos&igrave; via. Se si ripete questa operazione infinite volte, otteniamo infinite copie della prima ripetizione.</p>
+            </div>
+            <br><br><br><br><br><br>
+            
+        </div>
+        </div>
+    </body>
+</html>

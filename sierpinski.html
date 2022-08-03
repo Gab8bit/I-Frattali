@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Triangolo di Sierpinski e Dimensione Frattale</title>
+        <link type="text/css" rel="stylesheet" href="css_mate.css">
+    </head>
+    <body>
+        <video autoplay muted loop id="myVideo">
+            <source src="fractal.mp4" type="video/mp4">
+            Il tuo browser non supporta il video :(
+        </video>
+        <div class="pagina">
+        <div class="testata">
+            <br>
+            <h1 class="titolo">Triangolo di Sierpinski e Dimensione Frattale</h1>
+            <br><br>
+            <div class="linktestata">
+                <button type="button" class="pulsanti" onclick="window.location.href='index.html'">Home</button>
+                <button type="button" class="pulsanti" onclick="window.location.href='mandelbrot.html'">Mandelbrot</button>
+                <button type="button" class="pulsanti" onclick="window.location.href='curvadikoch.html'">Curva di Koch</button>
+                <button type="button" class="pulsanti" onclick="window.location.href='natura.html'">Frattali in Natura</button>
+                <button type="button" class="pulsanti" onclick="window.location.href='digitali.html'">Frattali Digitali</button>
+            </div>
+            <br>
+        </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        
+        <div class="corpo_sier">
+            <div class="spazio_testo_sier">
+                <h1 id="cosa_sono">Cos&apos;&egrave;?</h1>
+                <br>
+                <p>Come accennato in precedenza, i frattali hanno una dimensione non intera, ma che rientra tra 1 e 2.<br>Una figura ha dimensione 1 quando ha altezza nulla e una lunghezza (come una retta geometrica), ha 2 dimensioni quando ha un&apos;altezza e una lunghezza (come un quadrato) e ha 3 dimensioni quando ha una lunghezza, un&apos;altezza e una profondit&agrave; (come un cubo).<br>La geometria frattale invece ci dice che la dimensione di un frattale &egrave; compresa tra 1 e 2.<br>Molti si chiederanno come sia possibile ci&ograve;, ma in realt&agrave; &egrave; pi&ugrave; semplice di quello che si possa pensare.<br><br>Prendiamo come esempi:<br>- Un segmento (di dimensione 1)<br>- Un quadrato (di dimensione 2)<br>- Un cubo (di dimensione 3)<br>Per dividere queste figure in parti uguali bisogna seguire questa formula:<br><br><mark class="evidenziatore"><b>numero di figure ottenute = <span id="n">n</span>^<span id="D">D</span></b></mark><br><br>Dove &quot;<span id="n"><b>n</b></span>&quot; sta per il numero di parti divise e &quot;<span id="D"><b>D</b></span>&quot; sta per la dimensione.<br>Esempio: Se ogni figura ha lato 1, il numero di figure ottenute sar&agrave; 1^D. Se ogni figura ha lato 2, il numero di figure ottenute sar&agrave; 2^D e cos&Igrave; via infinite volte.</p>
+                <br><br>
+                <img class="fotosierpinski" src="immagini/tabella.png" alt="Tabella con Valori">
+                <br><br>
+                <p>Quindi abbiamo capito che, associando un segmento ad una figura, si ottengono tante parti uguali quanti sono i segmenti divisi e quant&apos;&egrave; la dimensione scelta.</p>
+                <br>
+                <br>
+                <img class="fotosierpinski" src="immagini/divisione.png" alt="Segmenti Divisi">
+                <br>
+                <br>
+                <p>Per&ograve; adesso vi starete chiedendo che cosa sia quel triangolo tutto bucato in basso a destra.<br>Quel triangolo prende il nome di &quot;<b>Triangolo di Sierpinski</b>&quot; e ci aiuta molto a capire il concetto di geometria frattale.<br><br>Associamo un segmento (che ricordiamo &egrave; monodimensionale) diviso in una parte (quindi &quot;intero&quot;) a un triangolo. Ci&ograve; che abbiamo &egrave; sempre un triangolo.<br>Associamo adesso un segmento diviso in 2^1 parti ad un triangolo diviso in 2^2 parti (l&apos;esponente indica sempre la dimensione) a cui togliamo il triangolo centrale che &egrave; stato creato da questa divisione. Quindi otteniamo questo:</p>
+                <br>
+                <br>
+                <img class="fotosierpinski" src="immagini/triangoli.png" alt="Triangolo di Sierpinski">
+                <br>
+                <br>
+                <p>Questo ci fa capire come la formula spiegata prima non &egrave; pi&ugrave; possibile utilizzarla, perch&egrave; 2^2 &ne; 3.<br>Iterando questo procedimento altre volte (moltiplicando il numero di segmenti di 2 in 2) otteniamo:</p>
+                <br>
+                <br>
+                <img class="fotosierpinski" src="immagini/triangoli2.png" alt="Triangoli di Sierpinski">
+                <br>
+                <br>
+                <p>Quindi, per rendere vera l&apos;equazione 2^D = 3, abbiamo bisogno di trovare un valore compreso tra 1 e 2 (perch&egrave; 2^1 triangoli sono di meno rispetto a 3 triangoli, ma 2^2 triangoli sono di pi&ugrave; rispetto a 3 triangoli).<br>Per calcolarlo bisogna risolvere l&apos;equazione esponenziale attraverso i logaritmi.</p>
+                <br>
+                <img class="fotosierpinski" src="immagini/frazione.png" alt="Frazione D=log3/log2">
+                <br>
+                <br>
+            </div>
+            <br><br><br><br><br><br>
+        </div>
+        </div>
+    </body>
+</html>
